@@ -41,13 +41,14 @@ deps text
 *.png binary
 *.gif binary
 *.jpg binary
+*.jpeg binary
 *.db binary
 *.jar binary
 *.ico binary
 *.mp3 binary
 *.mp4 binary
 *.flac binary
-*.jpg binary
-*.jpeg binary
-*.png binary
+*.alac binary
+*.m4a binary
+*.mkv binary
 .gitkeep binary
