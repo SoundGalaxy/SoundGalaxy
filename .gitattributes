@@ -1,60 +1,61 @@
-# Set default behaviour, in case users don't have core.autocrlf set.
-* text=auto
+## Unity ##
 
-# Explicitly declare text files we want to always be normalized and converted 
-# to native line endings on checkout.
-*.php text
-*.txt text
-*.ini text
-*.dist text
-*.twig text
-*.html text
-*.htm text
-*.json text
-*.log text
-*.yml text
-*.rb text
-*.csv text
-*.xml text
-*.ci text
-*.js text
-*.css text
-*.cache text
-*.meta text
-*.phar text
-app/console text
-console text
-vendors text
-.gitignore text
-behat text
-Capfile text
-deps text
-*.lock text
-*.md text
-*.markdown text
-.htaccess text
-*.sh text
-*.pl text
-*.cgi text
+*.cs diff=csharp text
+*.cginc text
+*.shader text
 
-# Denote all files that are truly binary and should not be modified.
-*.png binary
-*.gif binary
-*.jpg binary
-*.jpeg binary
-*.db binary
-*.jar binary
-*.ico binary
-*.mp3 binary
-*.mp4 binary
-*.flac binary
-*.alac binary
-*.m4a binary
-*.mkv binary
-*.zip binary
-*.rar binary
-*.7z binary
-*.gz binary
-*.img binary
-*.zst binary
-.gitkeep binary
+*.mat merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.physicMaterial merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+
+
+## git-lfs ##
+
+#Image
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+
+#Audio
+*.mp3 filter=lfs diff=lfs merge=lfs -binary
+*.wav filter=lfs diff=lfs merge=lfs -binary
+*.ogg filter=lfs diff=lfs merge=lfs -binary
+*.flac filter=lfs diff=lfs merge=lfs -binary
+*.alac filter=lfs diff=lfs merge=lfs -binary
+*.m4a filter=lfs diff=lfs merge=lfs -binary
+
+#Video
+*.mp4 filter=lfs diff=lfs merge=lfs -binary
+*.mov filter=lfs diff=lfs merge=lfs -binary
+*.mkv filter=lfs diff=lfs merge=lfs -binary
+
+#3D Object
+*.FBX filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+
+#ETC
+*.a filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -binary
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.aif filter=lfs diff=lfs merge=lfs -text
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.rns filter=lfs diff=lfs merge=lfs -text
+*.reason filter=lfs diff=lfs merge=lfs -text
+*.lxo filter=lfs diff=lfs merge=lfs -text
+*.bc filter=lfs diff=lfs merge=lfs -text
