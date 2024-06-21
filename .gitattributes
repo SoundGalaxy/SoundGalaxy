@@ -51,4 +51,10 @@ deps text
 *.alac binary
 *.m4a binary
 *.mkv binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.gz binary
+*.img binary
+*.zst binary
 .gitkeep binary
